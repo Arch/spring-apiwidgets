@@ -1,4 +1,4 @@
-# spring-apiwidgets
+# apiwidgets
 This repo contains the Java Spring base `apiwidgets`
 
 # How to use
@@ -6,8 +6,8 @@ Just need to attach one and only one annotation `@EnableApiWidgets` to enable al
 
 ```xml
 <dependency>
-    <groupId>com.rigofunc</groupId>
-    <artifactId>apiwidgets</artifactId>
+    <groupId>com.arch</groupId>
+    <artifactId>arch-apiwidgets</artifactId>
     <version>1.0.0-RELEASE</version>
 </dependency>
 ```
