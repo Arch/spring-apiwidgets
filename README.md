@@ -50,7 +50,7 @@ or
 ```
 The `result` is the `@RestController` action method raw returned business domain. 
 
-- [x] Global Handling Exceptions, all exceptions be thrown by RESTful API will be converted to `ApiResult` as described earlier. By using this, **apiwidgets** using/providing following standard `status code`:
+- [x] Global Handling Exceptions, all exceptions be thrown by RESTful API will be converted to `ApiResult<T>` as described earlier. By using this, **apiwidgets** using/providing following standard `status code`:
 
 | statusCode |  status code desc                        |
 |:-----------|:-----------------------------------------|
@@ -99,4 +99,4 @@ public class RoleCreateChecker extends AbstractChecker<RoleCreateDto> {
 }
 ```
 
-- [x] Simplify Json Serialization or Deserialization Feature, we want that case insensitive and not failure on unknown properties so that we do not need to attach `@JsonProperty`, the reason as described earlier. For example, if you just need to write java client for `TOF` API that written using C#, you will enjoy this feature.
+- [x] Simplify Json Serialization or Deserialization Feature, we want that case insensitive and not failure on unknown properties so that we do not need to attach `@JsonProperty`, the reason as described earlier. For example, if you just need to write java client for API that written using C#, you will enjoy this feature.
