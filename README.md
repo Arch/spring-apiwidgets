@@ -1,5 +1,5 @@
 # apiwidgets
-This repo contains the Java Spring base `apiwidgets`
+This repo contains the Java Spring based `apiwidgets`
 
 # How to use
 Just need to attach one and only one annotation `@EnableApiWidgets` to enable all the features provided by `apiwidgets`.
@@ -52,19 +52,19 @@ The `result` is the `@RestController` action method raw returned business domain
 
 - [x] Global Handling Exceptions, all exceptions be thrown by RESTful API will be converted to `ApiResult` as described earlier. By using this, **apiwidgets** using/providing following standard `status code`:
 
-| statusCode |  status code desc                          |
-|:-----------|:-------------------------------------------|
-| 20000      |  Success/OK                                |
-| 20400      |  Not Content                               |
-| 20500      |  api reentry                               |
-| 30200      |  Ajax request redirect                     |
-| 40000      |  Argument/parameter verify failure         |
-| 40100      |  Unauthorized/Permission checking failure  |
-| 40400      |  Not found by using filter condition       |
-| 50000      |  System Exception                          |
-| 50101      |  Access Token verify failure               |
-| 50102      |  client_id/appKey invalid                  |
-| 50103      |  time/date formatter error                 |
+| statusCode |  status code desc                        |
+|:-----------|:-----------------------------------------|
+| 200      |  Success/OK                                |
+| 204      |  Not Content                               |
+| 205      |  api reentry                               |
+| 302      |  Ajax request redirect                     |
+| 400      |  Argument/parameter verify failure         |
+| 401      |  Unauthorized/Permission checking failure  |
+| 404      |  Not found by using filter condition       |
+| 500      |  System Exception                          |
+| 501      |  Access Token verify failure               |
+| 502      |  client_id/appKey invalid                  |
+| 503      |  time/date formatter error                 |
 
 - [x] Making all request's parameters binding case insensitive. As all we know, the `@RequestParam(value="systemId")` underlying will call the
 ```java
